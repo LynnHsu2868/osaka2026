@@ -46,7 +46,10 @@ main{padding-top:84px}
 .count b{font-weight:400;font-size:1.9rem;line-height:1.1;display:block}
 .ticket .mid svg{width:58px}
 .ticket .pt b{font-weight:400;font-size:1.75rem;line-height:1.15;display:block;color:var(--ink)}
-.nav-pills{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;gap:8px;padding:4px 2px 10px}
+.nav-pills{display:grid!important;grid-template-columns:repeat(3,1fr);gap:8px;padding:4px 2px 10px}
+.nav-pills .nav-item{min-width:0}
+.nav-pills .nav-link{width:100%;white-space:normal!important}
+.nav-pills .nav-link small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .nav-pills::-webkit-scrollbar{display:none}
 .nav-pills .nav-link{border:3px solid var(--ink);border-radius:18px;color:var(--ink);background:var(--paper);line-height:1.25;white-space:nowrap;padding:.35rem .8rem .25rem}
 .nav-pills .nav-link b{font-weight:400;font-size:19px;display:block}
@@ -236,10 +239,10 @@ main{padding-top:84px}
       <h3 class="h3 mb-1" id="pickTitle">你是哪一組？</h3>
       <p class="text-secondary small mb-3">選好後就只會顯示你們這組的行程</p>
       <div class="d-grid gap-2">
-        <button class="btn btn-ink pick" style="--bs-btn-bg:var(--water);border-radius:20px" data-g="A">娃娃、小焰組<small>11/20 環球影城＋地陪｜11/23 卡丁車</small></button>
-        <button class="btn btn-ink pick" style="--bs-btn-bg:var(--bamboo);border-radius:20px" data-g="B">Ally、敏敏組<small>11/20 Outlet 門真｜11/23 難波公園</small></button>
-        <button class="btn btn-ink pick" style="--bs-btn-bg:var(--coral);border-radius:20px" data-g="C">小妮、Kelly組<small>11/19 空庭溫泉＋飯店會合｜11/23 晚上回台灣</small></button>
-        <button class="btn btn-ink pick" style="--bs-btn-bg:var(--yellow);border-radius:20px" data-g="D">婷姐<small>11/19 深夜到｜11/23 中午回台灣</small></button>
+        <button class="btn btn-ink pick" style="--bs-btn-bg:var(--water);border-radius:20px" data-g="A">娃娃、小焰組</button>
+        <button class="btn btn-ink pick" style="--bs-btn-bg:var(--bamboo);border-radius:20px" data-g="B">Ally、敏敏組</button>
+        <button class="btn btn-ink pick" style="--bs-btn-bg:var(--coral);border-radius:20px" data-g="C">小妮、Kelly組</button>
+        <button class="btn btn-ink pick" style="--bs-btn-bg:var(--yellow);border-radius:20px" data-g="D">婷姐</button>
         <button class="btn btn-link text-secondary" data-g="all">全部都看</button>
       </div>
     </div>
